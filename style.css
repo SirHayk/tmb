@@ -1,0 +1,352 @@
+background:var(--bg)
+}
+
+/** CSS by Austin (638877683) **/
+:root {
+	--bg: #00bfff
+}
+
+body {
+	margin: 0;
+	line-height: 17px;
+	color: #9f9f9f;
+	font-size: 11px;
+	font-family: sans-serif, arial;
+	font-weight: 400
+}
+
+body {
+  user-select: none; /* Evita la selección de texto en la página */
+}
+
+a {
+	text-decoration: none;
+	color: #888;
+	-webkit-transition: .6s all;
+	-moz-transition: .6s all;
+	-o-transition: .6s all;
+	transition: .6s all
+}
+
+a:hover {
+	color: #000
+}
+
+[name=box] {
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 640px;
+	height: 460px;
+	left: 50%;
+	border: 1px solid rgba(0, 0, 0, 0);
+	top: 50%;
+	overflow: hidden;
+	margin-left: -320px;
+	margin-top: -250px
+}
+
+[name=left] {
+	float: left;
+	width: 175px;
+	height: inherit;
+	display: inline-table
+}
+
+[name=pic] {
+	width: 70px;
+	height: 70px;
+	padding: 52px;
+	background: #fff;
+	text-align: center
+}
+
+[name=pic] img {
+	width: 65px;
+	height: 65px;
+	border-radius: 60px;
+	opacity: .7;
+	-webkit-transition: .7s all;
+	-moz-transition: .7s all;
+	-o-transition: .7s all;
+	transition: .7s all
+	 user-drag: none; /* Evita que las imágenes se puedan arrastrar */
+  user-select: none; /* Evita la selección de texto en la imagen */
+  -moz-user-select: none; /* Para navegadores basados en Gecko (Firefox) */
+  -webkit-user-drag: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  -webkit-user-select: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  -ms-user-select: none; /* Para Internet Explorer y Microsoft Edge */
+}
+
+[name=content] {
+	position: absolute;
+	background: #fff;
+	padding: 32px 43px;
+	border-top: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	overflow-x: auto;
+	height: 388px;
+	width: 378px;
+	right: 0
+}
+
+[name=nav] {
+	padding: 15px 35px;
+	margin-top: 2px;
+	width: 104px;
+	background: #fff;
+	height: 100%;
+	text-align: center;
+	border-bottom: 30px solid #f8f8f8
+}
+
+[name=nav] ul {
+	display: block;
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	font-family: monospace
+}
+
+[name=nav] li {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0
+}
+
+[name=nav] li a {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 19px 0;
+	text-decoration: none
+}
+
+[name=nav] li:nth-child(1) a:before {
+	content: '1 : ';
+	display: inline
+}
+
+[name=nav] li:nth-child(2) a:before {
+	content: '2 : ';
+	display: inline
+}
+
+[name=nav] li:nth-child(3) a:before {
+	content: '3 : ';
+	display: inline
+}
+
+[name=nav] li:nth-child(4) a:before {
+	content: '4 : ';
+	display: inline
+}
+
+[name=nav] li a:hover {
+	border-bottom: 1px solid #d0d0d0;
+	color: #000;
+	padding-left: 4px
+}
+
+[name=nav] li a:active {
+	border-bottom: 1px solid #637F77;
+	color: #000;
+	padding-left: 4px
+}
+
+h2 {
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 21px;
+	color: #000;
+	margin-bottom: 45px
+}
+
+[name=header2] {
+	border-bottom: 1px solid #637F77;
+	padding-bottom: 8px
+}
+
+[name=tabs-content-wrap] {
+	list-style-type: none
+}
+
+[name=tabs-content-wrap] ul {
+	display: block;
+	list-style-type: none;
+	padding: 0 15px;
+	margin: 0
+}
+
+[name=tabs-content-wrap] ul [name|=page] {
+	width: 100%;
+	list-style-type: none;
+	display: none;
+	transition: all 1s linear;
+	border-radius: 2px;
+	padding-bottom: 20px;
+	margin-top: 100%
+}
+
+[name=page-2]:not(:target)+[name=page-3]:not(:target)+[name=page-4]:not(:target)~[name=page-1-content] {
+	display: block;
+	margin-top: 0
+}
+
+[name=page-1]:target~[name=page-1-content] {
+	display: block;
+	margin-top: 0
+}
+
+[name=page-2]:target~[name=page-2-content] {
+	display: block;
+	margin-top: 0
+}
+
+[name=page-3]:target~[name=page-3-content] {
+	display: block;
+	margin-top: 0
+}
+
+[name=page-4]:target~[name=page-4-content] {
+	display: block;
+	margin-top: 0
+}
+
+[name=br] {
+	width: 370px;
+	text-align-last: center
+}
+
+[name=br] div {
+	font-size: 10px;
+	background: #fff;
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px
+}
+
+[name=br] div img {
+	width: 40px;
+	border-radius: 40px;
+	opacity: .9;
+	padding: 5px;
+	background: #fbfbfb;
+	float: left;
+	-webkit-filter: Grayscale(20%);
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out
+}
+
+[name=br] div:hover img {
+	opacity: 1;
+	-webkit-filter: Grayscale(0%)
+}
+
+[name=q] {
+	letter-spacing: 1px;
+	font-size: 9px;
+	padding: 10px 0;
+	text-transform: uppercase;
+	margin-bottom: 12px
+}
+
+[name=q]:before {
+	content: '?';
+	border: 1px solid #637F77;
+	color: #637F77;
+	float: left;
+	font-family: arial;
+	font-size: 9px;
+	font-weight: 700;
+	padding: 1px 6px;
+	margin-top: -3px;
+	border-radius: 20px;
+	margin-right: 10px
+}
+
+[name=answer] {
+	background: #fbfbfb;
+	border-left: 1px solid #f0f0f0;
+	padding: 15px;
+	margin-bottom: 30px;
+	font-size: 10px
+}
+
+[name=lw] {
+	margin-top: 30px;
+	font-family: 'open sans', sans-serif;
+	font-weight: 300;
+	line-height: 22px
+}
+
+[name=lt] {
+	display: inline;
+	color: #000;
+	padding-right: 5px;
+	font-weight: 300;
+	padding-bottom: 15px;
+	letter-spacing: 1px;
+	font-size: 11px;
+	text-transform: uppercase
+}
+
+[name=links] {
+	display: inline;
+	font-size: 11px
+}
+
+[name=links]a {
+	margin-right: 7px
+}
+
+::-webkit-scrollbar {
+	width: 14px;
+	height: 3px;
+	background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+	border: 6px solid #fff;
+	background-color: var(--bg);
+	border-radius: 15px
+}
+
+[name=credits] {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	border-radius: 50%
+}
+
+[name=credits] span {
+	text-align: center;
+	width: 50px;
+	height: 45px;
+	font-size: 3em;
+	display: table-cell;
+	color: #e6e6e6;
+	line-height: 33px;
+	vertical-align: bottom;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	transition: linear all .3s
+}
+
+[name=credits] a {
+	text-decoration: none
+}
+
+[name=credits] span:hover {
+	color: #fff
+}
+
+* {
+	;
